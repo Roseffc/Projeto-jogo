@@ -1,0 +1,51 @@
+body {
+    background-color: rgb(211, 250, 250)
+}
+
+.cat {
+    width: 80px;
+    height: 80px;
+    background-image: url("cat.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+}
+
+.pedra {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 0%;
+    background-image: url(pedra.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.game-over {
+    text-align: center;
+    color: rgb(201, 14, 36);
+    margin-top: 50px;
+    font-family: arial;
+}
+
+@keyframes slideright {
+    from {
+        background-position: 40000%;
+    }
+
+    to {
+        background-position: 0;
+    }
+}
+
+.background {
+    position: absolute;
+    bottom: 40px;
+    animation: slideright 500s infinite linear;
+    width: 100%;
+    height: 200px;
+    background-image: url(praia.jpg);
+    background-repeat: repeat-x;
+  }
